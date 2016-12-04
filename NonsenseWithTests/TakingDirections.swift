@@ -8,14 +8,49 @@
 
 import Foundation
 
-func takingDirections(directions: [(orientation: Instruction, distance: Int)]) -> (x:Int, y: Int){
+func takingDirections(directions: [(instruction: Instruction, distance: Int)]) -> (x:Int, y: Int){
     
     var x = 0
     var y = 0
     var results = ""
+    var facing: Instruction = .north
     
     for i in directions {
-        let facing = i.orientation
+        
+        //handles format change for extra credit 1 and 3
+        if facing == .north{
+            if i.instruction == .left{
+                facing = .west
+            } else if i.instruction == .right{
+                facing = .east
+            } else {
+                facing = i.instruction
+            }
+        } else if facing == .east{
+            if i.instruction == .left{
+                facing = .north
+            } else if i.instruction == .right{
+                facing = .south
+            } else {
+                facing = i.instruction
+            }
+        } else if facing == .south{
+            if i.instruction == .left{
+                facing = .east
+            } else if i.instruction == .right{
+                facing = .west
+            } else {
+                facing = i.instruction
+            }
+        }else if facing == .west{
+            if i.instruction == .left{
+                facing = .south
+            } else if i.instruction == .right{
+                facing = .north
+            } else {
+                facing = i.instruction
+            }
+        }
         
         switch facing {
         case .north:

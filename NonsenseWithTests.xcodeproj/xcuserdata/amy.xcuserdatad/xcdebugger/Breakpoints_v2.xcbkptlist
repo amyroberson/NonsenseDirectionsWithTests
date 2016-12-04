@@ -80,11 +80,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NonsenseWithTestsTests/TakingDirectionsTest.swift"
-            timestampString = "502497975.448422"
+            timestampString = "502582670.269867"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "testTakingDirections1()"
             landmarkType = "7">
          </BreakpointContent>

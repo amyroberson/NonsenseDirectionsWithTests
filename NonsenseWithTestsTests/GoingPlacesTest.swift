@@ -16,6 +16,13 @@ class GoingPlacesTest: XCTestCase{
     let xY1: [(Instruction, Int)] = [( .left, 10) , (.right, 10)]
     let xY2:  [(Instruction, Int)] = [( .right, 10) , (.left, 10) , (.left, 10), (.left, 10)]
 
+    //extra credit step 2 examples to test
+    let directions1: [(Instruction, Int)] = [(.north, 5), (.east, 10)]
+    let directions2: [(Instruction, Int)] = [(.north, 5), (.south, 5)]
+    let directions3: [(Instruction, Int)] = [(.north, 5), (.south, 5), (.west, 10), (.east, 5)]
+    let directions4: [(Instruction, Int)] = [(.north, 5), (.south, 15), (.west, 10), (.east, 5)]
+    let directions5: [(Instruction, Int)] = [(.north, 5), (.south, 15), (.west, 2), (.east, 5)]
+
 
     
     func testLocationChangeSimple() {
@@ -64,4 +71,41 @@ class GoingPlacesTest: XCTestCase{
         XCTAssertEqual(result.x, expected.x)
         XCTAssertEqual(result.y, expected.y)
     }
+    
+    func testLocationChangeDirections1() {
+        let result = goingPlaces(instructions: directions1)
+        let expected: (x: Int, y: Int) = (x: 10, y: 5)
+        XCTAssertEqual(result.x, expected.x)
+        XCTAssertEqual(result.y, expected.y)
+    }
+    
+    func testLocationChangeDirections2() {
+        let result = goingPlaces(instructions: directions2)
+        let expected: (x: Int, y: Int) = (x: 0, y: 0)
+        XCTAssertEqual(result.x, expected.x)
+        XCTAssertEqual(result.y, expected.y)
+    }
+    
+    func testLocationChangeDirections3() {
+        let result = goingPlaces(instructions: directions3)
+        let expected: (x: Int, y: Int) = (x: -5, y: 0)
+        XCTAssertEqual(result.x, expected.x)
+        XCTAssertEqual(result.y, expected.y)
+    }
+    
+    func testLocationChangeDirections4() {
+        let result = goingPlaces(instructions: directions4)
+        let expected: (x: Int, y: Int) = (x: -5, y: -10)
+        XCTAssertEqual(result.x, expected.x)
+        XCTAssertEqual(result.y, expected.y)
+    }
+    
+    func testLocationChangeDirections5() {
+        let result = goingPlaces(instructions: directions5)
+        let expected: (x: Int, y: Int) = (x: 3, y: -10)
+        XCTAssertEqual(result.x, expected.x)
+        XCTAssertEqual(result.y, expected.y)
+    }
+    
+    
 }

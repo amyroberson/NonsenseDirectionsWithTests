@@ -43,3 +43,30 @@ func turning(orientation: Instruction, direction: Instruction) -> Instruction {
     }
 }
 
+// Extra credit function 
+/*func convertInstructionLeftRight(orientation: Instruction, cardinalDirection: Instruction) -> Instruction {
+    if orientation == .north{
+        switch cardinalDirection {
+        case .north:
+            return 
+        case .south:
+            return
+        case .east:
+            return
+        case .west:
+            return
+        }
+    }
+    if orientation == .south {
+        
+    }
+    if orientation == .east {
+        
+    }
+    if orientation == .west{
+        
+    }
+    return cardinalDirection // if not north/east/west/south it would be right or left
+}
+ */
+

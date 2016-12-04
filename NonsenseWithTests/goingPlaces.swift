@@ -21,7 +21,7 @@ func goingPlaces(instructions:[(turn: Instruction, distance: Int)]) -> (x: Int, 
         } else if instruction.turn == .right{
             orientation = (turning(orientation: orientation, direction: .right))
         } else {
-            fatalError("Incorrect data in input")
+         orientation = instruction.turn //extra credit 2, because the instructions would be cardinalDirections, so left and right would be skipped
         }
 
         switch orientation {
@@ -54,7 +54,6 @@ func goingPlaces(instructions:[(turn: Instruction, distance: Int)]) -> (x: Int, 
     
     print(results)
     return (x: x, y: y)
-    
 }
 
 
