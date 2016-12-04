@@ -33,15 +33,13 @@ func followingDirections(directions: [(instruction: Instruction, distance: Int)]
             x = x - i.distance
         default:
             break
-            
-            
         }
         
     }
     
     if y < 0 {
         results.append(" \(abs(y)) blocks south,")
-    } else if y > 0{
+    } else if y > 0 {
         results.append(" \(y) blocks north,")
     } else {
         results.append("")

@@ -8,19 +8,15 @@
 
 import Foundation
 
-func takingDirections(directions: [(orientation: CardinalDirection, distance: Int)]) -> (x:Int, y: Int){
+func takingDirections(directions: [(orientation: Instruction, distance: Int)]) -> (x:Int, y: Int){
     
     var x = 0
     var y = 0
     var results = ""
     
     for i in directions {
-        var facing = i.orientation
-        //needs to set facing
-        facing = i.orientation
+        let facing = i.orientation
         
-        
-        // and or subtract to x or y
         switch facing {
         case .north:
             y = y + i.distance
@@ -30,12 +26,14 @@ func takingDirections(directions: [(orientation: CardinalDirection, distance: In
             x = x + i.distance
         case .west:
             x = x - i.distance
+        default:
+            print("Error in instruction input")
         }
-        
     }
+    
     if y < 0 {
         results.append(" \(abs(y)) blocks south,")
-    } else if y > 0{
+    } else if y > 0 {
         results.append(" \(y) blocks north,")
     } else {
         results.append("")

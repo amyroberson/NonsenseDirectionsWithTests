@@ -17,3 +17,29 @@ enum Instruction {
     case right
     case left
 }
+
+func turning(orientation: Instruction, direction: Instruction) -> Instruction {
+    
+    switch (orientation, direction){
+    case (.north, .right):
+        return .east
+    case (.south, .right):
+        return .west
+    case (.west, . right):
+        return .north
+    case (.east, . right):
+        return .south
+    case (.north, .left):
+        return .west
+    case (.south, .left):
+        return .east
+    case (.west, .left):
+        return .south
+    case (.east, .left):
+        return .north
+    default:
+        print("Error in direction input")
+        return direction
+    }
+}
+

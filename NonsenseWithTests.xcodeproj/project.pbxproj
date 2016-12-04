@@ -10,14 +10,14 @@
 		E16A7A101DF0C78800991BF3 /* NonsenseWithTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A7A061DF0C78800991BF3 /* NonsenseWithTests.framework */; };
 		E16A7A151DF0C78800991BF3 /* NonsenseWithTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A7A141DF0C78800991BF3 /* NonsenseWithTestsTests.swift */; };
 		E16A7A171DF0C78800991BF3 /* NonsenseWithTests.h in Headers */ = {isa = PBXBuildFile; fileRef = E16A7A091DF0C78800991BF3 /* NonsenseWithTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E16A7A231DF0C88600991BF3 /* FacingDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A7A221DF0C88600991BF3 /* FacingDirection.swift */; };
 		E16A7A271DF0CA3500991BF3 /* goingPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16A7A261DF0CA3500991BF3 /* goingPlaces.swift */; };
 		E1C3FE661DF0D134005AD645 /* GoingPlacesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FE651DF0D134005AD645 /* GoingPlacesTest.swift */; };
-		E1C3FEBF1DF25A84005AD645 /* CardinalDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FEBE1DF25A84005AD645 /* CardinalDirections.swift */; };
 		E1C3FEC11DF31734005AD645 /* TakingDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FEC01DF31734005AD645 /* TakingDirections.swift */; };
 		E1C3FEC31DF31769005AD645 /* TakingDirectionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FEC21DF31769005AD645 /* TakingDirectionsTest.swift */; };
 		E1C3FEC51DF31E34005AD645 /* InstructionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FEC41DF31E34005AD645 /* InstructionType.swift */; };
 		E1C3FEC71DF35A4F005AD645 /* FollowingDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FEC61DF35A4F005AD645 /* FollowingDirections.swift */; };
+		E1C3FEC91DF37D2D005AD645 /* FollowingDirectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FEC81DF37D2D005AD645 /* FollowingDirectionsTests.swift */; };
+		E1C3FECB1DF385F4005AD645 /* TurningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FECA1DF385F4005AD645 /* TurningTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +37,14 @@
 		E16A7A0F1DF0C78800991BF3 /* NonsenseWithTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NonsenseWithTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16A7A141DF0C78800991BF3 /* NonsenseWithTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonsenseWithTestsTests.swift; sourceTree = "<group>"; };
 		E16A7A161DF0C78800991BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E16A7A221DF0C88600991BF3 /* FacingDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacingDirection.swift; sourceTree = "<group>"; };
 		E16A7A261DF0CA3500991BF3 /* goingPlaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goingPlaces.swift; sourceTree = "<group>"; };
-		E1C3FE631DF0CBFF005AD645 /* FacingDirectionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacingDirectionsTest.swift; sourceTree = "<group>"; };
 		E1C3FE651DF0D134005AD645 /* GoingPlacesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoingPlacesTest.swift; sourceTree = "<group>"; };
-		E1C3FEBE1DF25A84005AD645 /* CardinalDirections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardinalDirections.swift; sourceTree = "<group>"; };
 		E1C3FEC01DF31734005AD645 /* TakingDirections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakingDirections.swift; sourceTree = "<group>"; };
 		E1C3FEC21DF31769005AD645 /* TakingDirectionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakingDirectionsTest.swift; sourceTree = "<group>"; };
 		E1C3FEC41DF31E34005AD645 /* InstructionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionType.swift; sourceTree = "<group>"; };
 		E1C3FEC61DF35A4F005AD645 /* FollowingDirections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingDirections.swift; sourceTree = "<group>"; };
+		E1C3FEC81DF37D2D005AD645 /* FollowingDirectionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingDirectionsTests.swift; sourceTree = "<group>"; };
+		E1C3FECA1DF385F4005AD645 /* TurningTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurningTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +89,7 @@
 			children = (
 				E16A7A091DF0C78800991BF3 /* NonsenseWithTests.h */,
 				E16A7A0A1DF0C78800991BF3 /* Info.plist */,
-				E16A7A221DF0C88600991BF3 /* FacingDirection.swift */,
 				E1C3FEC41DF31E34005AD645 /* InstructionType.swift */,
-				E1C3FEBE1DF25A84005AD645 /* CardinalDirections.swift */,
 				E16A7A261DF0CA3500991BF3 /* goingPlaces.swift */,
 				E1C3FEC01DF31734005AD645 /* TakingDirections.swift */,
 				E1C3FEC61DF35A4F005AD645 /* FollowingDirections.swift */,
@@ -104,10 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				E16A7A141DF0C78800991BF3 /* NonsenseWithTestsTests.swift */,
-				E1C3FE631DF0CBFF005AD645 /* FacingDirectionsTest.swift */,
 				E16A7A161DF0C78800991BF3 /* Info.plist */,
-				E1C3FEC21DF31769005AD645 /* TakingDirectionsTest.swift */,
 				E1C3FE651DF0D134005AD645 /* GoingPlacesTest.swift */,
+				E1C3FECA1DF385F4005AD645 /* TurningTests.swift */,
+				E1C3FEC21DF31769005AD645 /* TakingDirectionsTest.swift */,
+				E1C3FEC81DF37D2D005AD645 /* FollowingDirectionsTests.swift */,
 			);
 			path = NonsenseWithTestsTests;
 			sourceTree = "<group>";
@@ -225,10 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C3FEBF1DF25A84005AD645 /* CardinalDirections.swift in Sources */,
 				E1C3FEC71DF35A4F005AD645 /* FollowingDirections.swift in Sources */,
 				E1C3FEC11DF31734005AD645 /* TakingDirections.swift in Sources */,
-				E16A7A231DF0C88600991BF3 /* FacingDirection.swift in Sources */,
 				E1C3FEC51DF31E34005AD645 /* InstructionType.swift in Sources */,
 				E16A7A271DF0CA3500991BF3 /* goingPlaces.swift in Sources */,
 			);
@@ -239,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E16A7A151DF0C78800991BF3 /* NonsenseWithTestsTests.swift in Sources */,
+				E1C3FEC91DF37D2D005AD645 /* FollowingDirectionsTests.swift in Sources */,
 				E1C3FE661DF0D134005AD645 /* GoingPlacesTest.swift in Sources */,
 				E1C3FEC31DF31769005AD645 /* TakingDirectionsTest.swift in Sources */,
+				E1C3FECB1DF385F4005AD645 /* TurningTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
